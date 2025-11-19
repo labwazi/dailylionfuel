@@ -13,6 +13,7 @@ label{display:block;margin:10px 0 5px;font-weight:bold;}
 .checkbox-group label{font-weight:normal;margin-left:8px;}
 .wa-btn{background:#25D366;color:#0b0c10;text-align:center;padding:15px;margin-top:10px;border-radius:10px;font-weight:bold;font-size:18px;text-decoration:none;display:block;text-shadow:0 0 5px #0b0c10;}
 .wa-btn:hover{background:#1ebe57;}
+footer{margin-top:30px;text-align:center;font-size:14px;color:#00ffcc;opacity:0.85;}
 </style>
 </head>
 <body>
@@ -65,6 +66,10 @@ label{display:block;margin:10px 0 5px;font-weight:bold;}
 <a href="#" id="waLink" class="wa-btn">Send Report to WhatsApp</a>
 </div>
 
+<footer>
+    <p><strong>Mandatory:</strong> All reposts, likes, comments, and SharePoint activity must be documented and sent to the admin via WhatsApp as proof.</p>
+</footer>
+
 <script>
 const waBtn = document.getElementById("waLink");
 const WA_GROUP_LINK = "https://chat.whatsapp.com/JcU2LJ93jK38jKlGFM5BC6?mode=wwt";
@@ -84,6 +89,8 @@ ID: ${id}
 4️⃣ Aura Protection: ${document.getElementById("task4_done").checked ? "✅" : "❌"} ${document.getElementById("task4_note").value || ""}
 5️⃣ Midnight Reflection: ${document.getElementById("task5_done").checked ? "✅" : "❌"} ${document.getElementById("task5_note").value || ""}
 6️⃣ Mental Fuel: ${document.getElementById("task6_done").checked ? "✅" : "❌"} ${document.getElementById("task6_note").value || ""}
+
+Mandatory: All reposts, likes, comments, and SharePoint activity must be documented and sent to the admin via WhatsApp as proof.
     `;
     
     const encoded = encodeURIComponent(msg);
